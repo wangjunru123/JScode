@@ -1,0 +1,207 @@
+@function rem($px) {
+    @return $px / 37.5px * 1rem; //把px单位换算成rem单位。 $designWidth ：视觉稿的宽度
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .header {
+        width: rem(370px);
+        height: rem(25px);
+        background: skyblue;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        span {
+            font-size: rem(15px);
+            color: whitesmoke;
+        }
+        input {
+            width: rem(200px);
+            height: rem(20px);
+            outline: none;
+            font-size: rem(14px);
+            position: relative;
+            text-indent: rem(20px);
+        }
+        // .search {
+        //     position: absolute;
+        //     top: rem(5px);
+        //     left: rem(75px);
+        //     font-size: rem(14px);
+        //     color: #666;
+        // }
+        i {
+            color: whitesmoke;
+            font-size: rem(18px);
+        }
+    }
+    .main {
+        width: rem(370px);
+        flex: 1;
+        overflow: auto;
+        // margin-top: rem(10px);
+        .food {
+            width: rem(370px);
+            height: rem(100px);
+            // border: 1px solid #ccc;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            dl {
+                width: 19%;
+                height: rem(40px);
+                border: 1px solid #ccc;
+                dt {
+                    text-align: center;
+                }
+                i {
+                    font-size: rem(20px);
+                }
+                dd {
+                    text-align: center;
+                    font-size: rem(13px);
+                }
+            }
+        }
+        .sprice {
+            width: rem(370px);
+            height: rem(130px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            ul {
+                display: flex;
+                li {
+                    width: rem(160px);
+                    height: rem(75px);
+                    border: 1px solid #ccc;
+                }
+                h4 {
+                    font-size: rem(20px);
+                }
+                i {
+                    font-size: rem(30px);
+                    float: right;
+                }
+            }
+        }
+        .outBox {
+            width: rem(370px);
+            height: rem(100px);
+            // border: 1px solid #ccc;
+            // display: flex;
+            h3 {
+                font-size: rem(25px);
+            }
+            ul {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                li {
+                    width: rem(115px);
+                    height: rem(70px);
+                    border: 1px solid #ccc;
+                    border-radius: rem(5px);
+                    margin-right: rem(10px);
+                    background: skyblue;
+                    position: relative;
+                }
+                span {
+                    font-size: rem(25px);
+                    color: whitesmoke;
+                    border-radius: rem(5px);
+                }
+                button {
+                    width: rem(100px);
+                    height: rem(30px);
+                    border-radius: rem(15px);
+                    background: orange;
+                    color: papayawhip;
+                    position: absolute;
+                    bottom: 0;
+                    left: rem(2px);
+                    font-size: rem(20px);
+                }
+                p {
+                    width: rem(115px);
+                    height: rem(50px);
+                    background: url('../img/光速运营唯一QQ2415813907图片0003.jpg');
+                }
+                .mark {
+                    width: rem(115px);
+                    height: rem(30px);
+                    background: white;
+                    span {
+                        color: red;
+                        font-size: rem(17px);
+                    }
+                }
+            }
+        }
+        .qiangBox {
+            width: rem(370px);
+            height: rem(200px);
+            // display: flex;
+            h2 {
+                width: rem(370px);
+                height: rem(30px);
+                line-height: rem(30px);
+                font-size: rem(20px);
+            }
+            ul {
+                width: rem(373px);
+                display: flex;
+                justify-content: space-between;
+                li {
+                    width: rem(90px);
+                    height: rem(100px);
+                    margin-right: rem(5px);
+                }
+                p {
+                    width: rem(90px);
+                    height: rem(50px);
+                    background: url('../img/光速运营唯一QQ2415813907图片0007.jpg');
+                }
+                h5 {
+                    font-size: rem(15px);
+                }
+            }
+        }
+    }
+    .footer {
+        width: rem(370px);
+        height: rem(40px);
+        // background: #ccc;
+        display: flex;
+        justify-content: space-around;
+        dl {
+            dt {
+                text-align: center;
+            }
+            i {
+                font-size: rem(18px);
+                color: #ccc;
+            }
+            dd {
+                font-size: rem(16px);
+                color: #ccc;
+            }
+        }
+    }
+}

@@ -1,0 +1,223 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .header {
+  width: 9.86667rem;
+  height: 0.66667rem;
+  background: skyblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container .header span {
+  font-size: 0.4rem;
+  color: whitesmoke;
+}
+
+.container .header input {
+  width: 5.33333rem;
+  height: 0.53333rem;
+  outline: none;
+  font-size: 0.37333rem;
+  position: relative;
+  text-indent: 0.53333rem;
+}
+
+.container .header i {
+  color: whitesmoke;
+  font-size: 0.48rem;
+}
+
+.container .main {
+  width: 9.86667rem;
+  flex: 1;
+  overflow: auto;
+}
+
+.container .main .food {
+  width: 9.86667rem;
+  height: 2.66667rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container .main .food dl {
+  width: 19%;
+  height: 1.06667rem;
+  border: 1px solid #ccc;
+}
+
+.container .main .food dl dt {
+  text-align: center;
+}
+
+.container .main .food dl i {
+  font-size: 0.53333rem;
+}
+
+.container .main .food dl dd {
+  text-align: center;
+  font-size: 0.34667rem;
+}
+
+.container .main .sprice {
+  width: 9.86667rem;
+  height: 3.46667rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .main .sprice ul {
+  display: flex;
+}
+
+.container .main .sprice ul li {
+  width: 4.26667rem;
+  height: 2rem;
+  border: 1px solid #ccc;
+}
+
+.container .main .sprice ul h4 {
+  font-size: 0.53333rem;
+}
+
+.container .main .sprice ul i {
+  font-size: 0.8rem;
+  float: right;
+}
+
+.container .main .outBox {
+  width: 9.86667rem;
+  height: 2.66667rem;
+}
+
+.container .main .outBox h3 {
+  font-size: 0.66667rem;
+}
+
+.container .main .outBox ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.container .main .outBox ul li {
+  width: 3.06667rem;
+  height: 1.86667rem;
+  border: 1px solid #ccc;
+  border-radius: 0.13333rem;
+  margin-right: 0.26667rem;
+  background: skyblue;
+  position: relative;
+}
+
+.container .main .outBox ul span {
+  font-size: 0.66667rem;
+  color: whitesmoke;
+  border-radius: 0.13333rem;
+}
+
+.container .main .outBox ul button {
+  width: 2.66667rem;
+  height: 0.8rem;
+  border-radius: 0.4rem;
+  background: orange;
+  color: papayawhip;
+  position: absolute;
+  bottom: 0;
+  left: 0.05333rem;
+  font-size: 0.53333rem;
+}
+
+.container .main .outBox ul p {
+  width: 3.06667rem;
+  height: 1.33333rem;
+  background: url("../img/光速运营唯一QQ2415813907图片0003.jpg");
+}
+
+.container .main .outBox ul .mark {
+  width: 3.06667rem;
+  height: 0.8rem;
+  background: white;
+}
+
+.container .main .outBox ul .mark span {
+  color: red;
+  font-size: 0.45333rem;
+}
+
+.container .main .qiangBox {
+  width: 9.86667rem;
+  height: 5.33333rem;
+}
+
+.container .main .qiangBox h2 {
+  width: 9.86667rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.53333rem;
+}
+
+.container .main .qiangBox ul {
+  width: 9.94667rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .main .qiangBox ul li {
+  width: 2.4rem;
+  height: 2.66667rem;
+  margin-right: 0.13333rem;
+}
+
+.container .main .qiangBox ul p {
+  width: 2.4rem;
+  height: 1.33333rem;
+  background: url("../img/光速运营唯一QQ2415813907图片0007.jpg");
+}
+
+.container .main .qiangBox ul h5 {
+  font-size: 0.4rem;
+}
+
+.container .footer {
+  width: 9.86667rem;
+  height: 1.06667rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container .footer dl dt {
+  text-align: center;
+}
+
+.container .footer dl i {
+  font-size: 0.48rem;
+  color: #ccc;
+}
+
+.container .footer dl dd {
+  font-size: 0.42667rem;
+  color: #ccc;
+}
